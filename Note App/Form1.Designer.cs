@@ -36,8 +36,7 @@
             this.dgvMessageList = new System.Windows.Forms.DataGridView();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
-            this.btnRead = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMessageList)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,11 +84,18 @@
             // 
             // dgvMessageList
             // 
+            this.dgvMessageList.AllowUserToAddRows = false;
+            this.dgvMessageList.AllowUserToDeleteRows = false;
+            this.dgvMessageList.AllowUserToResizeColumns = false;
+            this.dgvMessageList.AllowUserToResizeRows = false;
             this.dgvMessageList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMessageList.Location = new System.Drawing.Point(372, 80);
             this.dgvMessageList.Name = "dgvMessageList";
+            this.dgvMessageList.ReadOnly = true;
+            this.dgvMessageList.RowHeadersVisible = false;
             this.dgvMessageList.Size = new System.Drawing.Size(201, 140);
             this.dgvMessageList.TabIndex = 5;
+            this.dgvMessageList.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dgvMessageList_MouseDown);
             // 
             // btnSave
             // 
@@ -99,6 +105,7 @@
             this.btnSave.TabIndex = 6;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnEdit
             // 
@@ -106,34 +113,26 @@
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 23);
             this.btnEdit.TabIndex = 7;
-            this.btnEdit.Text = "Edit";
+            this.btnEdit.Text = "New";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // btnRead
+            // btnDelete
             // 
-            this.btnRead.Location = new System.Drawing.Point(366, 235);
-            this.btnRead.Name = "btnRead";
-            this.btnRead.Size = new System.Drawing.Size(75, 23);
-            this.btnRead.TabIndex = 8;
-            this.btnRead.Text = "Read";
-            this.btnRead.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(498, 235);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Edit";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnDelete.Location = new System.Drawing.Point(323, 235);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 9;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(604, 285);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnRead);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.dgvMessageList);
@@ -161,8 +160,7 @@
         private System.Windows.Forms.DataGridView dgvMessageList;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnEdit;
-        private System.Windows.Forms.Button btnRead;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
 
