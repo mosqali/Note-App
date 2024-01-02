@@ -10,14 +10,16 @@ using System.Windows.Forms;
 
 namespace Note_App
 {
-    public partial class Form1 : Form
+    public partial class CreateNote : Form
     {
-        public Form1()
+        YourNotes yourNotes;
+
+        public CreateNote()
         {
             InitializeComponent();
         }
 
-        DataTable messageTable;
+        public DataTable messageTable;
 
         private void ClearTextBoxes()
         {
@@ -46,20 +48,11 @@ namespace Note_App
         {
             messageTable.Rows.Add(tbTitle.Text,tbMessageList.Text);
 
+            yourNotes.Titles.Add(tbTitle.Text);
+
+
             tbTitle.Clear();
             tbMessageList.Clear();
-        }
-
-        private void btnRead_Click(object sender, EventArgs e)
-        {
-            //declares clicked row as index
-            int index = dgvMessageList.CurrentCell.RowIndex;
-
-            if(index >= 0)
-            {
-                tbTitle.Text = messageTable.Rows[index].ItemArray[0].ToString();
-                tbMessageList.Text = messageTable.Rows[index].ItemArray[1].ToString();
-            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -80,6 +73,12 @@ namespace Note_App
                 tbTitle.Text = messageTable.Rows[index].ItemArray[0].ToString();
                 tbMessageList.Text = messageTable.Rows[index].ItemArray[1].ToString();
             }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            
         }
     }
 }

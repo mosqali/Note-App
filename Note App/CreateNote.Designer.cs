@@ -1,6 +1,6 @@
 ﻿namespace Note_App
 {
-    partial class Form1
+    partial class CreateNote
     {
         /// <summary>
         /// Erforderliche Designervariable.
@@ -35,7 +35,7 @@
             this.tbMessageList = new System.Windows.Forms.TextBox();
             this.dgvMessageList = new System.Windows.Forms.DataGridView();
             this.btnSave = new System.Windows.Forms.Button();
-            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnNew = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMessageList)).BeginInit();
             this.SuspendLayout();
@@ -43,7 +43,7 @@
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Location = new System.Drawing.Point(48, 45);
+            this.lblTitle.Location = new System.Drawing.Point(18, 25);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(30, 13);
             this.lblTitle.TabIndex = 0;
@@ -52,7 +52,7 @@
             // lblMessage
             // 
             this.lblMessage.AutoSize = true;
-            this.lblMessage.Location = new System.Drawing.Point(25, 80);
+            this.lblMessage.Location = new System.Drawing.Point(27, 86);
             this.lblMessage.Name = "lblMessage";
             this.lblMessage.Size = new System.Drawing.Size(53, 13);
             this.lblMessage.TabIndex = 1;
@@ -61,7 +61,7 @@
             // lblMessageList
             // 
             this.lblMessageList.AutoSize = true;
-            this.lblMessageList.Location = new System.Drawing.Point(369, 45);
+            this.lblMessageList.Location = new System.Drawing.Point(36, 163);
             this.lblMessageList.Name = "lblMessageList";
             this.lblMessageList.Size = new System.Drawing.Size(72, 13);
             this.lblMessageList.TabIndex = 2;
@@ -69,17 +69,17 @@
             // 
             // tbTitle
             // 
-            this.tbTitle.Location = new System.Drawing.Point(84, 42);
+            this.tbTitle.Location = new System.Drawing.Point(87, 25);
             this.tbTitle.Name = "tbTitle";
             this.tbTitle.Size = new System.Drawing.Size(136, 20);
             this.tbTitle.TabIndex = 3;
             // 
             // tbMessageList
             // 
-            this.tbMessageList.Location = new System.Drawing.Point(84, 80);
+            this.tbMessageList.Location = new System.Drawing.Point(86, 83);
             this.tbMessageList.Multiline = true;
             this.tbMessageList.Name = "tbMessageList";
-            this.tbMessageList.Size = new System.Drawing.Size(201, 140);
+            this.tbMessageList.Size = new System.Drawing.Size(95, 60);
             this.tbMessageList.TabIndex = 4;
             // 
             // dgvMessageList
@@ -89,17 +89,17 @@
             this.dgvMessageList.AllowUserToResizeColumns = false;
             this.dgvMessageList.AllowUserToResizeRows = false;
             this.dgvMessageList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMessageList.Location = new System.Drawing.Point(372, 80);
+            this.dgvMessageList.Location = new System.Drawing.Point(114, 163);
             this.dgvMessageList.Name = "dgvMessageList";
             this.dgvMessageList.ReadOnly = true;
             this.dgvMessageList.RowHeadersVisible = false;
-            this.dgvMessageList.Size = new System.Drawing.Size(201, 140);
+            this.dgvMessageList.Size = new System.Drawing.Size(100, 75);
             this.dgvMessageList.TabIndex = 5;
             this.dgvMessageList.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dgvMessageList_MouseDown);
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(225, 235);
+            this.btnSave.Location = new System.Drawing.Point(115, 268);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 6;
@@ -107,19 +107,19 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // btnEdit
+            // btnNew
             // 
-            this.btnEdit.Location = new System.Drawing.Point(84, 235);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(75, 23);
-            this.btnEdit.TabIndex = 7;
-            this.btnEdit.Text = "New";
-            this.btnEdit.UseVisualStyleBackColor = true;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            this.btnNew.Location = new System.Drawing.Point(45, 268);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(75, 23);
+            this.btnNew.TabIndex = 7;
+            this.btnNew.Text = "New";
+            this.btnNew.UseVisualStyleBackColor = true;
+            this.btnNew.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(323, 235);
+            this.btnDelete.Location = new System.Drawing.Point(196, 268);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 9;
@@ -127,13 +127,13 @@
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // Form1
+            // CreateNote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(604, 285);
+            this.ClientSize = new System.Drawing.Size(306, 331);
             this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.btnNew);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.dgvMessageList);
             this.Controls.Add(this.tbMessageList);
@@ -141,7 +141,7 @@
             this.Controls.Add(this.lblMessageList);
             this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.lblTitle);
-            this.Name = "Form1";
+            this.Name = "CreateNote";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMessageList)).EndInit();
@@ -159,7 +159,7 @@
         private System.Windows.Forms.TextBox tbMessageList;
         private System.Windows.Forms.DataGridView dgvMessageList;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnNew;
         private System.Windows.Forms.Button btnDelete;
     }
 }
