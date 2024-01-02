@@ -12,7 +12,7 @@ namespace Note_App
 {
     public partial class CreateNote : Form
     {
-        YourNotes yourNotes;
+        Desktop yourNotes;
 
         public CreateNote()
         {

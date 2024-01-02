@@ -43,7 +43,7 @@
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Location = new System.Drawing.Point(18, 25);
+            this.lblTitle.Location = new System.Drawing.Point(42, 158);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(30, 13);
             this.lblTitle.TabIndex = 0;
@@ -52,7 +52,7 @@
             // lblMessage
             // 
             this.lblMessage.AutoSize = true;
-            this.lblMessage.Location = new System.Drawing.Point(27, 86);
+            this.lblMessage.Location = new System.Drawing.Point(42, 201);
             this.lblMessage.Name = "lblMessage";
             this.lblMessage.Size = new System.Drawing.Size(53, 13);
             this.lblMessage.TabIndex = 1;
@@ -61,7 +61,7 @@
             // lblMessageList
             // 
             this.lblMessageList.AutoSize = true;
-            this.lblMessageList.Location = new System.Drawing.Point(36, 163);
+            this.lblMessageList.Location = new System.Drawing.Point(34, 262);
             this.lblMessageList.Name = "lblMessageList";
             this.lblMessageList.Size = new System.Drawing.Size(72, 13);
             this.lblMessageList.TabIndex = 2;
@@ -69,17 +69,17 @@
             // 
             // tbTitle
             // 
-            this.tbTitle.Location = new System.Drawing.Point(87, 25);
+            this.tbTitle.Location = new System.Drawing.Point(89, 155);
             this.tbTitle.Name = "tbTitle";
             this.tbTitle.Size = new System.Drawing.Size(136, 20);
             this.tbTitle.TabIndex = 3;
             // 
             // tbMessageList
             // 
-            this.tbMessageList.Location = new System.Drawing.Point(86, 83);
+            this.tbMessageList.Location = new System.Drawing.Point(101, 210);
             this.tbMessageList.Multiline = true;
             this.tbMessageList.Name = "tbMessageList";
-            this.tbMessageList.Size = new System.Drawing.Size(95, 60);
+            this.tbMessageList.Size = new System.Drawing.Size(44, 26);
             this.tbMessageList.TabIndex = 4;
             // 
             // dgvMessageList
@@ -89,17 +89,17 @@
             this.dgvMessageList.AllowUserToResizeColumns = false;
             this.dgvMessageList.AllowUserToResizeRows = false;
             this.dgvMessageList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMessageList.Location = new System.Drawing.Point(114, 163);
+            this.dgvMessageList.Location = new System.Drawing.Point(101, 242);
             this.dgvMessageList.Name = "dgvMessageList";
             this.dgvMessageList.ReadOnly = true;
             this.dgvMessageList.RowHeadersVisible = false;
-            this.dgvMessageList.Size = new System.Drawing.Size(100, 75);
+            this.dgvMessageList.Size = new System.Drawing.Size(55, 33);
             this.dgvMessageList.TabIndex = 5;
             this.dgvMessageList.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dgvMessageList_MouseDown);
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(115, 268);
+            this.btnSave.Location = new System.Drawing.Point(101, 281);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 6;
@@ -109,7 +109,7 @@
             // 
             // btnNew
             // 
-            this.btnNew.Location = new System.Drawing.Point(45, 268);
+            this.btnNew.Location = new System.Drawing.Point(31, 281);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(75, 23);
             this.btnNew.TabIndex = 7;
@@ -119,7 +119,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(196, 268);
+            this.btnDelete.Location = new System.Drawing.Point(182, 281);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 9;
@@ -131,7 +131,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(306, 331);
+            this.ClientSize = new System.Drawing.Size(322, 370);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnNew);
             this.Controls.Add(this.btnSave);

@@ -16,7 +16,7 @@ namespace Note_App
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new YourNotes());
+            Application.Run(new Desktop());
         }
     }
 }
